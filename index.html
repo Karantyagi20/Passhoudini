@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassHoudini</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; background: #f4f7fa; color: #333; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background: #1a1a2e; }
+        .navbar .logo { font-size: 1.5rem; font-weight: bold; color: #e94560; }
+        .navbar ul { display: flex; gap: 1.5rem; }
+        .navbar li { font-size: 1rem; font-weight: 500; }
+        .navbar a:hover { color: #e94560; }
+        .container { padding: 4rem 2rem; }
+        .hero { text-align: center; background: linear-gradient(135deg, #16222a 0%, #3a6073 100%); color: #fff; padding: 4rem 2rem; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.125rem; max-width: 700px; margin: 0 auto; }
+        h2 { text-align: center; font-size: 2rem; margin-bottom: 2rem; color: #1a1a2e; }
+        .feature-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; }
+        .card { background: #f4f7fa; border-radius: 12px; padding: 2rem; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .card img { width: 60px; margin-bottom: 1rem; }
+        .card h3 { margin-bottom: 0.5rem; color: #1a1a2e; }
+        .vision { text-align: center; background: #1a1a2e; color: #fff; padding: 4rem 2rem; }
+        .vision p { font-size: 1.125rem; max-width: 600px; margin: 0 auto; }
+        .contact-form { max-width: 600px; margin: 0 auto; background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .contact-form label { display: block; margin-bottom: 0.5rem; font-weight: 500; }
+        .contact-form input, .contact-form textarea { width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px; }
+        .contact-form button { padding: 0.75rem 1.5rem; border: none; border-radius: 4px; background: #e94560; color: #fff; font-size: 1rem; cursor: pointer; }
+        .contact-form button:hover { background: #d03455; }
+        footer { text-align: center; padding: 2rem; color: #777; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">PassHoudini</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home" class="hero">
+        <h1>Welcome to PassHoudini</h1>
+        <p>“Making Your Passwords Escape Hackers’ Hands!”</p>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Our Features</h2>
+        <div class="feature-cards">
+          <div class="card">
+            <img src="https://img.icons8.com/ios-filled/100/000000/password.png" alt="Password Generator">
+            <h3>Password Generator</h3>
+          </div>
+          <div class="card">
+            <!-- updated phishing detection image -->
+            <img src="https://img.icons8.com/ios-filled/100/000000/phishing.png" alt="Phishing Detection">
+            <h3>Phishing Detection</h3>
+          </div>
+          <div class="card">
+            <img src="https://img.icons8.com/ios-filled/100/000000/data-protection.png" alt="Breach Detection">
+            <h3>Breach Detection</h3>
+          </div>
+          <div class="card">
+            <!-- updated identity theft protection image -->
+            <img src="https://img.icons8.com/ios-filled/100/000000/identity-theft.png" alt="Identity Theft Protection">
+            <h3>Identity Theft Protection</h3>
+          </div>
+        </div>
+      </section>
+      
+
+    <section class="vision">
+        <h2>Our Vision</h2>
+        <p>PassHoudini is an innovative cybersecurity solution designed to combat credential leaks, phishing attacks, and data breaches. With an emphasis on security, convenience, and cutting-edge technology, PassHoudini ensures users maintain control over their digital identity without compromising ease of access.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@PassHoudini.com | Phone: +919557156446 </p>
+    </section>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
