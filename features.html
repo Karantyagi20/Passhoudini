@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Features - PassHoudini</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <style>
+    .navbar { background: #1a1a2e; }
+    .navbar .logo { color: #e94560; }
+    .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    footer { color: #777; }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+
+  <!-- NAVBAR -->
+  <nav class="navbar flex items-center justify-between px-6 py-4">
+    <div class="logo text-2xl font-bold">Passhoudini</div>
+    <ul class="flex space-x-6 text-gray-200">
+      <li><a href="index.html" class="hover:text-pink-500">Home</a></li>
+      <li><a href="features.html" class="hover:text-pink-500 font-semibold">Features</a></li>
+      <li><a href="contact.html" class="hover:text-pink-500">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="bg-gradient-to-br from-[#16222a] to-[#3a6073] text-white text-center py-16 px-6">
+    <h1 class="text-4xl font-bold mb-4">Our Features</h1>
+    <p class="text-lg max-w-2xl mx-auto">Explore what makes Passhoudini your ultimate security partner.</p>
+  </section>
+
+  <!-- CONTENT -->
+  <div class="container mx-auto px-6 py-12">
+    <h2 class="text-3xl font-semibold text-center mb-8 text-[#1a1a2e]">Feature Showcase</h2>
+    <div class="grid grid-cols-1 gap-12">
+      <!-- Video 1 -->
+      <div class="video-wrapper mx-auto w-full max-w-3xl">
+        <iframe
+          src="https://www.youtube.com/embed/5Lrq09KoHIg"
+          title="Feature Video 1"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <!-- Video 2 -->
+      <div class="video-wrapper mx-auto w-full max-w-3xl">
+        <iframe
+          src="https://www.youtube.com/embed/8A2k2WNbkpU"
+          title="Feature Video 2"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-6">
+    &copy; 2025 Passhoudini
+  </footer>
+</body>
+</html>
